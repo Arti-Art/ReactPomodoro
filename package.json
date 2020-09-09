@@ -3,9 +3,10 @@
   "version": "0.0.1",
   "description": "My first react app",
   "private": true,
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "keywords": [],
   "author": "artiart art.kouznetsov@gmail.com",
@@ -19,6 +20,7 @@
     "eslint-plugin-unicorn": "^21.0.0",
     "husky": "^4.3.0",
     "lint-staged": "^10.3.0",
+    "parcel-bundler": "^1.12.4",
     "prettier": "^2.1.1"
   },
   "lint-staged": {
