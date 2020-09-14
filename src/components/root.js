@@ -6,7 +6,18 @@
 */
 
 import React from "react";
+import Header from "./header";
+import Core from "./core";
+import Footer from "./footer";
 
-const RootComponent = () => <p>{"Hello World"}</p>;
+function RootComponent() {
+    return (
+        <div id="pom-container">
+            <Header />
+            <Core />
+            <Footer />
+        </div>
+    );
+}
 
 export default RootComponent;
