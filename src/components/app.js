@@ -27,6 +27,7 @@ class App extends React.Component {
         this.onDecreaseSessionLength = this.onDecreaseSessionLength.bind(this);
         this.onToggleInterval = this.onToggleInterval.bind(this);
         this.onUpdateTimerMinute = this.onUpdateTimerMinute.bind(this);
+        this.onPlayStopTimer = this.onPlayStopTimer.bind(this);
         this.onResetTimer = this.onResetTimer.bind(this);
     }
     onIncreaseBreakLength() {
@@ -80,25 +81,27 @@ class App extends React.Component {
             <main>
                 <Header title="Pomodoro Clock" />
                 <section className="interval-length-container">
-                    <BreakInterval
-                        isPlay={this.state.isPlay}
-                        breakInterval={this.state.breakLength}
-                        increaseBreak={this.onIncreaseBreakLength}
-                        decreaseBreak={this.onDecreaseBreakLength}
-                    />
                     <SessionLength
                         isPlay={this.state.isPlay}
                         sessionLength={this.state.sessionLength}
                         increaseSession={this.onIncreaseSessionLength}
                         decreaseSession={this.onDecreaseSessionLength}
                     />
+                    <BreakInterval
+                        isPlay={this.state.isPlay}
+                        breakInterval={this.state.breakLength}
+                        increaseBreak={this.onIncreaseBreakLength}
+                        decreaseBreak={this.onDecreaseBreakLength}
+                    />
                 </section>
                 <Timer
+                    isPlay={this.state.isPlay}
                     timerMinute={this.state.timerMinute}
                     breakLength={this.state.breakLength}
                     updateTimerMinute={this.onUpdateTimerMinute}
                     toggleInterval={this.onToggleInterval}
                     resetTimer={this.onResetTimer}
+                    onPlayStopTimer={this.onPlayStopTimer}
                 />
                 <Footer />
             </main>

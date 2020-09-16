@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(235, 205, 255);
+    background-color: rgb(116, 116, 116);
+    color: rgb(238, 238, 238);
 }
 main {
     display: flex;
@@ -10,7 +11,7 @@ main {
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 400;
 }
 
@@ -30,19 +31,24 @@ h4 {
 
 .interval-length-container {
     display: flex;
+    margin-bottom: 50px;
 }
 
 button {
     padding: 5px 10px;
     margin: 0 10px;
     height: 25px;
-    background-color: #263646;
+    background-color: #dbb460;
+    color: black;
     border: none;
     outline: none;
     cursor: pointer;
-    color: #eee;
     width: 75px;
     border-radius: 2px;
+}
+
+button:disabled {
+    cursor: not-allowed;
 }
 
 .interval-length {
@@ -51,14 +57,25 @@ button {
     
 }
 
+.timer-box {
+    background-color: rgb(42, 42, 42);
+    width: 320px;
+    height: 220px;
+    border-radius: 25px;
+}
+
 .timer-container {
+    background-color: rgb(247, 235, 219);
     border: 2px solid gray;
-    margin-top: 40px;
+    margin: 25px auto;
     border-radius: 25px;
     width: 250px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.50);
     padding: 10px;
+}
+.timer-container > * {
+    color: rgb(37, 37, 37);
 }
 
 .timer {
