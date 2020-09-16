@@ -7,6 +7,7 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-import RootComponent from "./components/root";
+import App from "./components/app";
+import "./index.css";
 
-ReactDOM.render(<RootComponent />, document.querySelector("#app"));
+ReactDOM.render(<App />, document.querySelector("#app"));
