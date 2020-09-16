@@ -10,4 +10,4 @@ button to launch and pause the timer and a "Reset" button to reset the time.
 We had one week to complete the project.
 
 ## Link
-Here's the link to my project on Netlify: INSERT LINK
+Here's the link to my project on Netlify: [Arti React Pomodoro](https://artireactpomodoro.netlify.app/)
